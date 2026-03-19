@@ -1,4 +1,0 @@
-SHOW DATABASES;
-CREATE DATABASE vinit;
-USE vinit;
-CREATE TABLE Department()

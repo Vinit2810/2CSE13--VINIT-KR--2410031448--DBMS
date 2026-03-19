@@ -1,0 +1,65 @@
+Query 1: Display the total number of employee working in the company.
+
+         SELECT COUNT(*) FROM EMPLOYEE;
+
+Query 2: Display the total salary being paid to all employees.
+
+         SELECT SUM(SAL) FROM EMPLOYEE;
+
+Query 3: Display the maximum salary from employee table.
+      
+         SELECT MAX(SAL) FROM EMPLOYEE;
+
+Query 4: Display the minimum salary from employee table.
+
+         SELECT MIN(SAL) FROM EMPLOYEE;
+
+Query 5: Display the average salary from employee table.
+ 
+         SELECT AVG(SAL) FROM EMPLOYEE;
+
+Query 6: Display the maximum salary being paid to clerk.
+ 
+         SELECT MAX(SAL) FROM EMPLOYEE
+         WHERE JOB = 'CLERK';
+
+Query 7: Display the maximum salary being paid in dept no 20.
+
+         SELECT MAX(SAL) FROM EMPLOYEE
+         WHERE DEPTNO = 20;
+
+Query 8: Display the minimum salary paid to any salesman.
+ 
+         SELECT MIN(SAL) FROM EMPLOYEE
+         WHERE JOB = 'SALESMAN';
+
+Query 9: Display the average salary drawn by managers.
+
+         SELECT AVG(SAL) FROM EMPLOYEE
+         WHERE JOB = 'MANAGER';
+
+Query 10: Display the total salary drawn by analyst working in dept no 40.
+
+          SELECT SUM(SAL) FROM EMPLOYEE
+          WHERE JOB = 'ANALYST' AND DEPTNO = 40;
+
+Query 11: Display the names of the employee in uppercase.
+
+          SELECT UPPER(ENAME) FRO EMPLOYEE;
+
+Query 12: Display the names of the employee in lowercase.
+
+          SELECT LOWER(ENAME) FORM EMPLOYEE;
+
+Query 13: Display the names of the employee in  proper case.
+
+          SELECT CONCAT(UPPER(SUBSTRING(ENAME, 1, 1)),
+          LOWERSUBSTRING(ENAME, 2))) AS ProperName FROM EMPLOYEE;
+
+Query 14: Display the length of Your name using appropriate function.
+
+          SELECT LENGTH('VINIT') FROM DUAL;
+
+Query 15: Display the length of all the employee names.
+
+          SELECT LENGTH(ENAME) FROM EMPLOYEE;
